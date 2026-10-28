@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Student photo placeholder</title>
+  <desc id="desc">Replace this illustration with your own student photo.</desc>
+  <rect width="320" height="320" rx="12" fill="#d7dadd"/>
+  <circle cx="160" cy="112" r="55" fill="#8b989f"/>
+  <path d="M55 300c8-68 49-105 105-105s97 37 105 105" fill="#8b989f"/>
+</svg>

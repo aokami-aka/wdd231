@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Personal site logo</title>
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="#183b4e"/>
+  <path d="M16 45V19h7l9 13 9-13h7v26h-7V30l-9 12-9-12v15z" fill="#ffffff"/>
+  <circle cx="51" cy="13" r="5" fill="#d97706"/>
+</svg>
