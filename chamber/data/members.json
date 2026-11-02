@@ -1,13 +1,13 @@
 [
   {
-    "name": "Cabo Branco Café",
-    "tagline": "Coffee, culture, and community",
+    "name": "Cabo Branco tea",
+    "tagline": "Tea, culture, and community",
     "address": "Av. Cabo Branco, 1800, Cabo Branco, João Pessoa - PB",
     "phone": "(83) 3031-1800",
-    "website": "https://example.com/cabo-branco-cafe",
+    "website": "https://example.com/cabo-branco-tea",
     "image": "cabo-branco-cafe.svg",
     "membershipLevel": 3,
-    "description": "A fictional specialty coffee shop inspired by the Cabo Branco neighborhood."
+    "description": "A fictional specialty tea shop inspired by the Cabo Branco neighborhood."
   },
   {
     "name": "Paraíba Tech Solutions",
@@ -20,7 +20,7 @@
     "description": "A fictional technology consultancy supporting small and medium businesses."
   },
   {
-    "name": "Verde Mar Floricultura",
+    "name": "Verde Mar Flowers",
     "tagline": "Nature in every detail",
     "address": "Rua Professora Maria Sales, 250, Manaíra, João Pessoa - PB",
     "phone": "(83) 3031-3300",
@@ -30,11 +30,11 @@
     "description": "A fictional flower shop offering arrangements, plants, and event decoration."
   },
   {
-    "name": "Ponto do Artesanato",
+    "name": "craft spot",
     "tagline": "Handmade with Paraíba identity",
     "address": "Av. Nossa Senhora dos Navegantes, 500, Tambaú, João Pessoa - PB",
     "phone": "(83) 3031-4400",
-    "website": "https://example.com/ponto-artesanato",
+    "website": "https://example.com/craft-spot",
     "image": "ponto-artesanato.svg",
     "membershipLevel": 1,
     "description": "A fictional store showcasing crafts and products from local artisans."
@@ -50,21 +50,21 @@
     "description": "A fictional shared workspace for freelancers, startups, and entrepreneurs."
   },
   {
-    "name": "Sabor da Paraíba",
+    "name": "Paraíba Flavor",
     "tagline": "Regional flavors, local roots",
     "address": "Av. João Machado, 700, Centro, João Pessoa - PB",
     "phone": "(83) 3031-6600",
-    "website": "https://example.com/sabor-paraiba",
+    "website": "https://example.com/flavor-paraiba",
     "image": "sabor-paraiba.svg",
     "membershipLevel": 2,
     "description": "A fictional restaurant celebrating traditional Paraíba cuisine."
   },
   {
-    "name": "Litoral Contabilidade",
+    "name": "Litoral Contability",
     "tagline": "Clarity for your business",
     "address": "Av. Flávio Ribeiro Coutinho, 400, Manaíra, João Pessoa - PB",
     "phone": "(83) 3031-7700",
-    "website": "https://example.com/litoral-contabilidade",
+    "website": "https://example.com/litoral-contability",
     "image": "litoral-contabilidade.svg",
     "membershipLevel": 1,
     "description": "A fictional accounting office serving entrepreneurs and local companies."
