@@ -6,6 +6,10 @@
     --nav-hover: #28596e;
     --accent: #a64b00;
     --muted: #485661;
+
+    --paper: #ffffff;
+    --surface: #eef2f4;
+    --line: #c5d1d8;
 }
 
 * {
@@ -308,7 +312,7 @@ h1 {
 .list-view .member-heading {
     border-bottom: 0;
     text-align: left;
-    padding-left: 1rem;
+    padding: .6rem 1rem;
 }
 
 .list-view .member-details {
@@ -316,7 +320,7 @@ h1 {
     padding: .55rem 1rem;
 }
 
-.list-view .member-logo {
+.list-view .member-logo-frame {
     display: none;
 }
 
@@ -499,6 +503,7 @@ h1 {
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: .45rem;
+    margin-bottom: 1rem;
 }
 
 .section-heading {
@@ -755,16 +760,3 @@ h1 {
     }
 }
 
-/* List view: completely remove business images and their space */
-.member-grid.list-view .member-details {
-    display: block;
-}
-
-.member-grid.list-view .member-logo {
-    display: none !important;
-}
-
-.member-grid.list-view .member-info {
-    width: 100%;
-    min-width: 0;
-}
