@@ -1,3 +1,5 @@
+
+
 /* Larger-screen layout and horizontal navigation */
 
 @media (min-width: 40rem) {
@@ -61,11 +63,6 @@
         grid-template-columns: 1fr;
     }
 
-    .list-view .member-card {
-        grid-template-columns: minmax(12rem, 1fr) 2fr;
-        align-items: center;
-    }
-
     .list-view .member-heading {
         text-align: left;
         padding: .8rem 1rem;
@@ -116,14 +113,6 @@
 
     .member-grid.list-view {
         grid-template-columns: 1fr;
-    }
-
-    .list-view .member-card {
-        grid-template-columns: minmax(14rem, 1fr) 2fr;
-    }
-
-    .list-view .member-details {
-        grid-template-columns: 6rem minmax(0, 1fr);
     }
 }
 

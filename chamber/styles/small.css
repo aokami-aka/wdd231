@@ -4,12 +4,8 @@
     --ink: #17212b;
     --nav: #183b4e;
     --nav-hover: #28596e;
-    --accent: #d97706;
-    --paper: #ffffff;
-    --surface: #eef2f4;
-    --line: #c8d2d8;
+    --accent: #a64b00;
     --muted: #485661;
-    --nolink: #c7c7c7;
 }
 
 * {
@@ -302,20 +298,26 @@ h1 {
 
 .member-grid.list-view {
     grid-template-columns: 1fr;
-    gap: .65rem;
+    gap: .5rem;
 }
 
 .list-view .member-card {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
 }
 
 .list-view .member-heading {
-    text-align: center;
+    border-bottom: 0;
+    text-align: left;
+    padding-left: 1rem;
 }
 
 .list-view .member-details {
-    grid-template-columns: 5rem minmax(0, 1fr);
+    display: block;
+    padding: .55rem 1rem;
+}
+
+.list-view .member-logo {
+    display: none;
 }
 
 /* FOOTER */
@@ -468,7 +470,7 @@ h1 {
     display: inline-block;
     padding: .75rem 1.3rem;
     color: white;
-    background: var(--accent);
+    background-color: #a64b00;
     border-radius: .4rem;
     text-decoration: none;
     font-weight: 700;
@@ -751,4 +753,18 @@ h1 {
         grid-template-columns: 3.5rem minmax(0, 1fr);
         gap: .5rem;
     }
+}
+
+/* List view: completely remove business images and their space */
+.member-grid.list-view .member-details {
+    display: block;
+}
+
+.member-grid.list-view .member-logo {
+    display: none !important;
+}
+
+.member-grid.list-view .member-info {
+    width: 100%;
+    min-width: 0;
 }
