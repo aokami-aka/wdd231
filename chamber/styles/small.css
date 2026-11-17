@@ -760,15 +760,6 @@ h1 {
     }
 }
 
-/* SHARED COLOR VARIABLES */
-
-:root {
-    --paper: #ffffff;
-    --surface: #eef2f4;
-    --line: #bdcbd2;
-}
-
-
 /* JOIN PAGE */
 
 .join-main {

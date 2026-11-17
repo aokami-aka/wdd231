@@ -111,14 +111,11 @@
                         type="text"
                         id="organizationTitle"
                         name="organizationTitle"
-                        title="Enter your organizational title using at least seven letters, spaces, or hyphens."
+                        title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters."
                         autocomplete="organization-title"
-                        pattern="[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ -]{6,}"
-                        placeholder="Example: Sales Manager"
+                        pattern="[A-Za-z -]{7,}"
+                        minlength="7"
                     >
-                    <span class="field-hint">
-                        Minimum 7 characters. Letters, spaces, and hyphens only.
-                    </span>
                 </label>
 
                 <label for="email">
