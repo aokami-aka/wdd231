@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Apply for membership at the João Pessoa Chamber of Commerce and discover opportunities to grow your business.">
+    <meta name="author" content="Victor Santos">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Join | João Pessoa Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the João Pessoa Chamber of Commerce.">
+    <meta property="og:image" content="https://aokami-aka.github.io/wdd231/chamber/images/chamber-logo.svg">
+    <meta property="og:url" content="https://aokami-aka.github.io/wdd231/chamber/join.html">
+
+    <title>Join the Chamber | João Pessoa Chamber of Commerce</title>
+
+    <link rel="icon" href="images/chamber-logo.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <a class="brand" href="index.html" aria-label="João Pessoa Chamber of Commerce home">
+        <img src="images/chamber-logo.svg" alt="" width="48" height="48">
+        <span>João Pessoa Chamber of Commerce</span>
+    </a>
+
+    <button class="menu-toggle" id="menuButton" type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primaryNav">
+        <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" aria-current="page">Join</a>
+        <a href="about.html">About</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="events.html">Events</a>
+    </nav>
+</header>
+
+<main class="join-main">
+
+    <div class="join-intro">
+        <h1>Join the Chamber</h1>
+        <p>
+            Become part of João Pessoa's business community.
+            Connect with local entrepreneurs, discover new opportunities,
+            and help strengthen our local economy.
+        </p>
+    </div>
+
+    <div class="join-layout">
+
+        <!-- APPLICATION FORM -->
+        <section class="application-section" aria-labelledby="form-heading">
+
+            <h2 id="form-heading">Membership Application</h2>
+
+            <p class="form-required-note">
+                Fields marked with * are required.
+            </p>
+
+            <form action="thankyou.html" method="get" class="membership-form">
+
+                <label for="firstName">
+                    First Name *
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        title="Enter your first name."
+                        autocomplete="given-name"
+                        required
+                    >
+                </label>
+
+                <label for="lastName">
+                    Last Name *
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        title="Enter your last name."
+                        autocomplete="family-name"
+                        required
+                    >
+                </label>
+
+                <label for="organizationTitle">
+                    Organizational Title
+                    <input
+                        type="text"
+                        id="organizationTitle"
+                        name="organizationTitle"
+                        title="Enter your organizational title using at least seven letters, spaces, or hyphens."
+                        autocomplete="organization-title"
+                        pattern="[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ -]{6,}"
+                        placeholder="Example: Sales Manager"
+                    >
+                    <span class="field-hint">
+                        Minimum 7 characters. Letters, spaces, and hyphens only.
+                    </span>
+                </label>
+
+                <label for="email">
+                    Email Address *
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        title="Enter a valid email address."
+                        autocomplete="email"
+                        placeholder="example@email.com"
+                        required
+                    >
+                </label>
+
+                <label for="phone">
+                    Mobile Phone Number *
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        title="Enter your mobile phone number."
+                        autocomplete="tel"
+                        required
+                    >
+                </label>
+
+                <label for="organization">
+                    Business / Organization Name *
+                    <input
+                        type="text"
+                        id="organization"
+                        name="organization"
+                        title="Enter the name of your business or organization."
+                        autocomplete="organization"
+                        required
+                    >
+                </label>
+
+                <label for="membership">
+                    Membership Level *
+                    <select
+                        id="membership"
+                        name="membership"
+                        title="Select your preferred membership level."
+                        required
+                    >
+                        <option value="" disabled selected>Select a membership level</option>
+                        <option value="np">NP Membership - Free</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">
+                    Business / Organization Description
+                    <textarea
+                        id="description"
+                        name="description"
+                        title="Describe your business or organization."
+                        rows="5"
+                        placeholder="Tell us about your business..."
+                    ></textarea>
+                </label>
+
+                <input
+                    type="hidden"
+                    id="timestamp"
+                    name="timestamp"
+                    value=""
+                >
+
+                <input
+                    type="submit"
+                    value="Submit Membership Application"
+                    class="submit-button"
+                >
+
+            </form>
+        </section>
+
+        <!-- MEMBERSHIP LEVEL CARDS -->
+        <section class="membership-levels" aria-labelledby="levels-heading">
+
+            <h2 id="levels-heading">Membership Levels</h2>
+
+            <p class="levels-intro">
+                Choose the membership that best fits your business.
+            </p>
+
+            <div class="level-grid">
+
+                <article class="level-card np-card">
+                    <h3>NP Membership</h3>
+                    <p class="level-price">Free</p>
+                    <p>For nonprofit organizations.</p>
+                    <button type="button" class="level-link" data-modal="npModal">
+                        View Benefits
+                    </button>
+                </article>
+
+                <article class="level-card bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p class="level-price">($50 / year)</p>
+                    <p>For businesses starting their journey.</p>
+                    <button type="button" class="level-link" data-modal="bronzeModal">
+                        View Benefits
+                    </button>
+                </article>
+
+                <article class="level-card silver-card">
+                    <h3>Silver Membership</h3>
+                    <p class="level-price">($100 / year)</p>
+                    <p>For businesses seeking more visibility.</p>
+                    <button type="button" class="level-link" data-modal="silverModal">
+                        View Benefits
+                    </button>
+                </article>
+
+                <article class="level-card gold-card">
+                    <h3>Gold Membership</h3>
+                    <p class="level-price">($200 / year)</p>
+                    <p>For businesses seeking maximum exposure.</p>
+                    <button type="button" class="level-link" data-modal="goldModal">
+                        View Benefits
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- MEMBERSHIP MODALS -->
+
+    <dialog id="npModal" class="membership-modal">
+        <div class="modal-content">
+            <h2>NP Membership Benefits</h2>
+            <p class="modal-price">Free Membership</p>
+            <ul>
+                <li>Access to chamber networking events.</li>
+                <li>Community participation opportunities.</li>
+                <li>Access to chamber newsletters.</li>
+                <li>Basic business networking support.</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="bronzeModal" class="membership-modal">
+        <div class="modal-content">
+            <h2>Bronze Membership Benefits</h2>
+            <p class="modal-price">Entry-Level Membership</p>
+            <ul>
+                <li>All NP membership benefits.</li>
+                <li>Business listing in the chamber directory.</li>
+                <li>Discounts on selected chamber events.</li>
+                <li>Access to introductory business workshops.</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="silverModal" class="membership-modal">
+        <div class="modal-content">
+            <h2>Silver Membership Benefits</h2>
+            <p class="modal-price">Advanced Membership</p>
+            <ul>
+                <li>All Bronze membership benefits.</li>
+                <li>Enhanced business advertising opportunities.</li>
+                <li>Priority access to training sessions.</li>
+                <li>Additional discounts on chamber events.</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="goldModal" class="membership-modal">
+        <div class="modal-content">
+            <h2>Gold Membership Benefits</h2>
+            <p class="modal-price">Premium Membership</p>
+            <ul>
+                <li>All Silver membership benefits.</li>
+                <li>Business spotlight opportunities on the homepage.</li>
+                <li>Premium advertising placements.</li>
+                <li>Invitations to exclusive networking events.</li>
+                <li>Priority promotional opportunities.</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </div>
+    </dialog>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="footer-contact">
+        <h2>João Pessoa Chamber of Commerce</h2>
+        <p>João Pessoa, Paraíba, Brazil</p>
+        <p>Email: victormad2020@gmail.com</p>
+        <p>Phone: (83) 92149-8327</p>
+    </div>
+
+    <nav class="social-links" aria-label="Social media links">
+        <a href="https://www.linkedin.com/in/victor-santos-967b633b7"
+            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.7H4.98V9.2h2.95v9.5ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.25 10.8h-2.94v-4.62c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.78 1.2-1.78 2.44v4.7H9.5V9.2h2.82v1.3h.04c.39-.74 1.35-1.53 2.78-1.53 2.98 0 3.56 1.96 3.56 4.51v5.22Z"/>
+            </svg>
+        </a>
+
+        <a href="https://github.com/aokami-aka/wdd231"
+            target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .8Z"/>
+            </svg>
+        </a>
+    </nav>
+
+    <div class="footer-development">
+        <p>WDD 231 Class Project</p>
+        <p>Victor Santos</p>
+        <p>© <span id="currentyear"></span> João Pessoa Chamber of Commerce</p>
+        <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+    </div>
+
+</footer>
+
+</body>
+</html>
