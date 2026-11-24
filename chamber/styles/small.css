@@ -506,16 +506,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.section-heading {
-    margin: 0 0 1rem;
-    padding: .7rem;
-    color: white;
-    background: var(--nav);
-    border-radius: .3rem;
-    text-align: center;
-    font-size: 1.15rem;
-}
-
 .section-intro {
     margin: -.3rem 0 1rem;
     color: var(--muted);

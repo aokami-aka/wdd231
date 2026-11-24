@@ -46,7 +46,22 @@
   font-weight: 700;
 }
 .visit-message p { margin: 0; color: var(--ink); font-weight: 700; }
-.section-heading { display: flex; flex-wrap: wrap; align-items: end; justify-content: center; gap: .5rem 1rem; margin-bottom: 1rem; }
+.section-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+    gap: .5rem 1rem;
+
+    margin: 0 0 1rem;
+    padding: .7rem;
+
+    color: white;
+    background: var(--nav);
+    border-radius: .3rem;
+    text-align: center;
+    font-size: 1.15rem;
+}
 .section-heading h2 { margin: 0; font-size: 1.6rem; }
 .section-heading p { margin: .15rem 0 0; }
 .attraction-count { padding: .25rem .7rem; border-radius: 2rem; color: var(--nav); background: #e2ebef; font-size: .85rem; font-weight: 700; }
